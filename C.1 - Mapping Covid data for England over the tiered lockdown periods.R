@@ -1,30 +1,46 @@
+# Install and load required packages:
+
+# install.packages('shiny')
+# install.packages('leaflet')
+# install.packages('tidyverse')
+# install.packages('rgeos')
+# install.packages('rgdal')
+# install.packages('maptools')
+# install.packages('ggplot2')
+
 library(shiny)
 library(leaflet)
-library(janitor)
 library(tidyverse)
 library(rgeos)
 library(rgdal)
 library(maptools)
-library(readxl)
 library(ggplot2)
 
+# Load map boundary data set:
 bdys <- read.csv('https://github.com/mollywilshaw/Final-Year-Project-Report-Code/raw/main/Data%20Sets/LAD_DEC_2020_UK_BUC%20%5B1%5D.csv')
 
+# Load combined data set:
 data <- read.csv("https://github.com/mollywilshaw/Final-Year-Project-Report-Code/blob/main/Data%20Sets/Combined%20Data.csv?raw=true")
+
+# Filter combined data set between the dates of the tier system:
 data$date <- as.Date(data$date, '%d/%m/%Y')
 data <- filter(data,between(date,as.Date("14/10/2020","%d/%m/%Y"),as.Date("6/1/2021","%d/%m/%Y")))
 
+# Subset parts of data set we will use:
 casedata <- data[,c(1:3,5,6)] 
-casedata <- mutate(casedata,'New cases'=cut(casedata$new_cases,breaks=c(0,100,200,300,400,500,Inf),right=FALSE))
 casepropdata <- data[,c(1:3,5,7)]
-casepropdata <- mutate(casepropdata,'New cases (as a proportion of the population)'=cut(casepropdata$new_cases_proportion,breaks=c(0,5,10,20,30,40),right=FALSE))
 tierdata <- data[,c(1:3,5,9)]
 
+# Create discrete variables for new case numbers and new cases as a proportion of the population:
+casedata <- mutate(casedata,'New cases'=cut(casedata$new_cases,breaks=c(0,100,200,300,400,500,Inf),right=FALSE))
+casepropdata <- mutate(casepropdata,'New cases (as a proportion of the population)'=cut(casepropdata$new_cases_proportion,breaks=c(0,5,10,20,30,40),right=FALSE))
+
+# Join data sets with map boundary data:
 casedatawmap <- arrange(left_join(casedata,bdys,by=c("la_code"="id")))
 casepropdatawmap <- arrange(left_join(casepropdata,bdys,by=c("la_code"="id")))
 tierdatawmap <- arrange(left_join(tierdata,bdys,by=c("la_code"="id")))
 
-
+# Create interactive dashboard:
 ui <- fluidPage(
   
   titlePanel("Mapping Covid-19 Data for England over the Tiered Lockdown Periods"),
@@ -117,4 +133,5 @@ server <- function(input, output) {
   })
 }
 
+# Launch interactive dashboard:
 shinyApp(ui = ui, server = server)
