@@ -2,7 +2,7 @@
 
 This repository serves as an appendix to the report 'The ABC of COVID Modelling: Evaluating England's Tiered Lockdown System'.
 
-The folder 'Data' contains the datasets used for this project (with references below). All code files are labelled according to their reference in the report. 
+The folder 'Data Sets' contains the data sets used for this project (with references below). All code files are labelled according to their reference in the report. 
 
 ## Data References
 <a id="1">[1]</a> 
