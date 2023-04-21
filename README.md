@@ -23,3 +23,8 @@ URL: https://www.legislation.gov.uk/uksi/2020/1104/made.
 The Health Protection (Coronavirus, Local COVID-19 Alert Level) (Very
 High) (England) Regulations 2020, 10 2020.  
 URL: https://www.legislation.gov.uk/uksi/2020/1105/made.
+
+<a id="5">[5]</a> 
+Local Authority District to County (April 2021) Lookup in England, Office for National Statistics, 3
+2021.  
+URL: https://geoportal.statistics.gov.uk/datasets/ons::local-authority-district-to-county-april-2021-lookup-in-england-1/about
