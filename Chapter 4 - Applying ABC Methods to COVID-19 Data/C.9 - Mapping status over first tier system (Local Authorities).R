@@ -12,7 +12,7 @@ library(rgdal)
 library(maptools)
 
 # Download the Local Authority names and codes:
-data <- read.csv('https://github.com/mollywilshaw/Final-Year-Project-Report-Code/raw/main/Data%20Sets/Combined%20Data.csv')[,c(1,2)]
+data <- read.csv('https://github.com/mollywilshaw/Final-Year-Project-Report-Code/blob/main/Data%20Sets/Combined%20Data.csv?raw=true')[,c(1,2)]
 data <- unique(data)
 # Download data on the changes in tiers (during the first system):
 changes <- read.csv('https://github.com/mollywilshaw/Final-Year-Project-Report-Code/raw/main/Data%20Sets/1st%20system%20tier%20changes%20%5B2%5D%5B3%5D%5B4%5D.csv')
