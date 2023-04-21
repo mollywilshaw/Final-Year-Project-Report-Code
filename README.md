@@ -33,3 +33,13 @@ URL: https://geoportal.statistics.gov.uk/datasets/ons::local-authority-district-
 The Health Protection (Coronavirus, Restrictions) (All Tiers) (England)
 Regulations 2020, 12 2020.  
 URL: https://www.legislation.gov.uk/uksi/2020/1374/schedule/4/made.
+
+<a id="7">[7]</a> 
+Coronavirus (COVID-19) in the UK, GOV.UK, 2023.  
+From: https://coronavirus.data.gov.uk/details/download  
+Download link: https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=cumCasesBySpecimenDate&metric=newCasesBySpecimenDate&metric=cumCasesBySpecimenDateRate&format=csv&_ga=2.112665540.1562794105.1673726071-1774892231.1669981368https://coronavirus.data.gov.uk/details/download#fair-usage-policy
+
+<a id="8">[8]</a> 
+Overview of the UK population: 2020, Office for National Statistics, 2 2022 (Sheet MYE7)  
+From: https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland  
+Download link: https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2020/ukpopestimatesmid2020on2021geography.xls
