@@ -23,7 +23,7 @@ bdys <- read.csv('https://github.com/mollywilshaw/Final-Year-Project-Report-Code
 data <- read.csv("https://github.com/mollywilshaw/Final-Year-Project-Report-Code/blob/main/Data%20Sets/Combined%20Data.csv?raw=true")
 
 # Filter combined data set between the dates of the tier system:
-data$date <- as.Date(data$date, '%d/%m/%Y')
+data$date <- as.Date(data$date)
 data <- filter(data,between(date,as.Date("14/10/2020","%d/%m/%Y"),as.Date("6/1/2021","%d/%m/%Y")))
 
 # Subset parts of data set we will use:
