@@ -28,3 +28,8 @@ URL: https://www.legislation.gov.uk/uksi/2020/1105/made.
 Local Authority District to County (April 2021) Lookup in England, Office for National Statistics, 3
 2021.  
 URL: https://geoportal.statistics.gov.uk/datasets/ons::local-authority-district-to-county-april-2021-lookup-in-england-1/about
+
+<a id="6">[6]</a> 
+The Health Protection (Coronavirus, Restrictions) (All Tiers) (England)
+Regulations 2020, 12 2020.  
+URL: https://www.legislation.gov.uk/uksi/2020/1374/schedule/4/made.
