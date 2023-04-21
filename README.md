@@ -8,3 +8,18 @@ The folder 'Data Sets' contains the data sets used for this project (with refere
 <a id="1">[1]</a> 
 Local Authority Districts (December 2020) UK BUC, Office for National Statistics, 2021.  
 URL: https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2020-uk-buc/about
+
+<a id="2">[2]</a> 
+The Health Protection (Coronavirus, Local COVID-19 Alert Level)
+(Medium) (England) Regulations 2020, 10 2020.  
+URL: https://www.legislation.gov.uk/uksi/2020/1103/contents/made.
+
+<a id="3">[3]</a> 
+The Health Protection (Coronavirus, Local COVID-19 Alert Level)
+(High) (England) Regulations 2020, 10 2020.  
+URL: https://www.legislation.gov.uk/uksi/2020/1104/made.
+
+<a id="4">[4]</a> 
+The Health Protection (Coronavirus, Local COVID-19 Alert Level) (Very
+High) (England) Regulations 2020, 10 2020.  
+URL: https://www.legislation.gov.uk/uksi/2020/1105/made.
