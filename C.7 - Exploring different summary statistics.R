@@ -104,5 +104,5 @@ obsdata <- obsdata|>
   mutate(cat="obs")
 
 # Plot the observed v.s. simulated data, with the simulated data based on the different summary statistics above:
-ggplot(rbind(simuldata, obsdata), aes(x=t, y=Infected, color=cat)) + geom_line(lwd=1) + scale_color_discrete(name='Data type', breaks=c('obs','mean','median','mode','closest'), labels=c('Observed','Simulated (mean)','Simulated (median)','Simulated (mode)','Simulated (minimal distance)'), type=c('cornflowerblue','red','goldenrod1','springgreen2','darkgrey'))
+ggplot(rbind(simuldata, obsdata), aes(x=t, y=Infected, color=cat)) + geom_line(lwd=1) + scale_color_discrete(name='Data type', breaks=c('obs','mean','median','mode','closest'), labels=c('Observed','Simulated (mean)','Simulated (median)','Simulated (mode)','Simulated (minimal distance)'), type=c('cornflowerblue','red','goldenrod1','springgreen2','darkgrey')) + xlab('Time t') + ylab('Number of infected individuals')
 
