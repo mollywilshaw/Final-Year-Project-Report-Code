@@ -43,3 +43,7 @@ Download link: https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=
 Overview of the UK population: 2020, Office for National Statistics, 2 2022 (Sheet MYE7)  
 From: https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland  
 Download link: https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2020/ukpopestimatesmid2020on2021geography.xls
+
+<a id="9">[9]</a> 
+Coronavirus (COVID-19) Infection Survey: England, Office for National Statistics, 2023.  
+URL: https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata
