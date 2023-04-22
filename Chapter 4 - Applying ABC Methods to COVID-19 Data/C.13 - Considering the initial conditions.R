@@ -67,7 +67,7 @@ abc <- function(N, epsilon, prior.beta, dates, inpt.data){
   post <- data.frame('beta'=character(), 'diff'=character())
   
   for(i in 1:N){
-    beta <- runif(1,prior.int[1],prior.int[2])
+    beta <- runif(1, prior.beta[1], prior.beta[2])
     
     data <- sirs(beta, 1/10, 1/152, d.start, d.end, inpt.data)
     
