@@ -165,7 +165,7 @@ plothists <- function(abc.out,inpt.data){
   for(i in 1:(length(dates)-1)){
     tier <- inpt.data[inpt.data$date==as.Date(dates[i]),6]
     dates.title <- paste(format.Date(dates[i],'%d/%m/%Y'),format.Date(dates[i+1],'%d/%m/%Y'),sep=' - ')
-    tier.title <- ifelse(tier=='National Lockdown','National Lockdown',paste('(Tier ',tier,')',sep=''))
+    tier.title <- ifelse(tier=='National Lockdown','(National Lockdown)',paste('(Tier ',tier,')',sep=''))
     hist(abc.out[[i]]$beta, main=paste(dates.title,tier.title,sep=' '),xlab='Beta')
   }
 }
